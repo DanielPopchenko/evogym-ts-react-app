@@ -1,23 +1,38 @@
+// {
+//   "compilerOptions": {
+//     "outDir": "./dist/",
+//     "noImplicitAny": true,
+//     "module": "ESNext",
+//     "target": "ES2017",
+//     "jsx": "react-jsx",
+//     "allowJs": true,
+//     "moduleResolution": "node",
+//     "allowSyntheticDefaultImports": true,
+
+//     "baseUrl": ".",
+//     "paths": {
+//       "@*": ["src/*"]
+//     },
+//     "esModuleInterop": true
+//   },
+//   "ts-node": {
+//     "compilerOptions": {
+//       "module": "CommonJS"
+//     }
+//   }
+// }
+
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "noImplicitAny": true,
-    "module": "ES2020",
     "target": "ES2020",
-    "jsx": "react-jsx",
-    "allowJs": true,
-    "moduleResolution": "Node16",
-    "allowSyntheticDefaultImports": true,
-
-    "baseUrl": ".",
-    "paths": {
-      "@*": ["src/*"]
-    },
-    "esModuleInterop": true
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
   },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
-  }
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
